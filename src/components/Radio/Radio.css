@@ -1,0 +1,19 @@
+.grupos span{
+    font-size: 15px;
+    color: #666;
+    position: relative;
+    left: -10;
+}
+
+.grupos{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.margin{
+    margin: 0;
+}
+
+.grupos label{
+    margin: 0;
+}

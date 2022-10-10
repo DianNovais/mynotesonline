@@ -1,0 +1,164 @@
+.App{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  height: 100%;
+  width: 100vw;
+  margin: 0;
+}
+
+aside {
+  width: 320px;
+  margin-bottom: 30px;
+  background-color: #fff;
+  box-shadow: 0 0 14px 0 rgba(0,0,0, 0.2);
+  border-radius: 10px;
+  padding: 30px 20px;
+}
+
+aside strong {
+  font-size: 20px;
+  text-align: center;
+  display: block;
+  color: #333;
+}
+
+aside form {
+  margin-top: 30px;
+}
+
+aside form .inputBlock label{
+  color: #acacac;
+  font-size: 14px;
+  font-weight: bold;
+  display: block;
+}
+
+aside form .inputBlock input{
+  width: 100%;
+  height: 32px;
+  font-size: 14px;
+  color: #666;
+  border: 0;
+  border-bottom: 1px solid #eee;
+}
+
+aside form .inputBlock textarea{
+  margin-top: 7px;
+  width: 100%;
+  height: 200px;
+  font-size: 14px;
+  color: #666;
+  border: 0;
+  border-bottom: 1px solid #eee;
+  background-color: #fff;
+}
+
+aside form input[type=submit]{
+  width: 100%;
+  border: 0;
+  margin-top: 30px;
+  border-radius: 10px;
+  padding: 15px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer;
+}
+
+
+main {
+  max-width: 67%;
+  overflow-x: hidden;
+  padding: 0;
+  border: 0;
+}
+
+.containerVisible{
+  display: block;
+  transition: all 0.3s;
+}
+
+.containerHidden{
+  display: block;
+  transition: all 0.3s;
+}
+
+.btnOpen{
+  display: none;
+}
+.btnClosed{
+  display: none;
+}
+
+
+.btnBookDisable{
+  background-color: #faa391;
+}
+.btnBookActiv{
+  background-color: #ff8a73;
+}
+
+input[type='radio']:after {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  top: -2px;
+  left: -1px;
+  position: relative;
+  background-color:white;
+  display: inline-block;
+  visibility: visible;
+  border: 1px solid black;
+}
+
+input[type='radio']:checked:after {
+  border: 4.5px solid black;  
+}
+
+
+
+
+@media (max-width: 900px){
+  .asideContainer{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    margin-right: 50px;
+
+  }
+
+  aside{
+    width: 300px;
+  }
+
+  main {
+    max-width: 80%;
+  }
+
+  .containerHidden{
+    display: none;
+  }
+
+  .btnOpen{
+    display: block;
+    position: fixed;
+    color: #666;
+    right: 20px;
+    top: 20px;
+    font-size: 30px;
+    transform: rotate(180deg);
+    transition: all 0.3s;
+  }
+  .btnClosed{
+    display: block;
+    position: fixed;
+    color: #666;
+    right: 20px;
+    top: 20px;
+    font-size: 30px;
+    transition: all 0.3s;
+  }
+}

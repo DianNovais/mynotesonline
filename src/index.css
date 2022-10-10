@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  border: 0;
+  outline: 0;
+}
+
+html, body, #root{
+  height: 100%;
+  overflow-x: hidden;
+}
+
+body{
+  background-color: #e4e7ef;
+  -webkit-font-smoothing: antialiased;
+  padding: 60px 30px;
+}
+
+body, input, button, textarea {
+  font-family: Roboto, sans-serif;
+}
+
+body ul{
+  list-style: none;
+}
+
+@media (max-width: 900px){
+  body{
+    padding: 30px 15px;
+  }
+}
